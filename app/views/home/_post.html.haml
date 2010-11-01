@@ -1,0 +1,10 @@
+#post
+  #post_username
+    = post.user.email
+  #post_title
+    = post.title
+  #post_message
+    = post.message
+    
+  #reply_box
+    -# = render :partial => 'post', :collection => post.replies
