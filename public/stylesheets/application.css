@@ -1,0 +1,49 @@
+#container {
+  margin: 10px auto 10px auto;
+  width: 800px;
+  border: 1px solid black;
+  padding: 0px; }
+
+ul.post_list {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  padding: 0px;
+  margin: 0px; }
+
+.clear {
+  clear: both; }
+
+#post {
+  margin: 2px;
+  padding: 0px; }
+
+#reply_box {
+  margin-left: 25px;
+  border-left: 1px dotted #888888; }
+
+.email {
+  font-family: helvetica; }
+
+.title {
+  font-family: arial;
+  margin-left: 5px; }
+
+.message {
+  font-family: arial;
+  font-size: smaller;
+  margin-left: 20px; }
+
+/* DEVISE MENU STYLES */
+.hmenu {
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  padding: 0px; }
+  .hmenu ul {
+    list-style: none;
+    border: none; }
+    .hmenu ul li {
+      display: inline;
+      border: none; }

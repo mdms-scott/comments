@@ -1,3 +1,6 @@
 #container
   %ul.post_list
     = render :partial => 'post', :collection => @posts
+    
+  #commenting_menu
+    = link_to('Post Comment', new_post_path)

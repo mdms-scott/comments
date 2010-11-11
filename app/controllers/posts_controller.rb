@@ -17,6 +17,11 @@ class PostsController < ApplicationController
     end
   end
   
+  def reply
+    @post = Post.new
+    @post.reply_id = params[:reply_id]
+  end
+  
   def edit
     @post = Post.find(params[:id])
   end

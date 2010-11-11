@@ -1,10 +1,17 @@
 #post
   #post_username
-    = post.user.email
+    .email
+      = post.user.email
   #post_title
-    = post.title
+    .title
+      = post.title
   #post_message
-    = post.message
+    .message  
+      = post.message
     
   #reply_box
-    -# = render :partial => 'post', :collection => post.replies
+    - @replies = post.replies
+    = render :partial => 'post', :collection => @replies
+    
+  #actions
+    = link_to('Reply', reply_post_path(:reply_id => post.id), :method => 'post')

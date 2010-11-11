@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.integer :user_id
       t.string :title
       t.text :message
+      t.integer :reply_id, :default => 0
 
       t.timestamps
     end

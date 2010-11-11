@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20101101233406) do
     t.integer  "user_id"
     t.string   "title"
     t.text     "message"
+    t.integer  "reply_id",   :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -5,6 +5,9 @@ Comments::Application.routes.draw do
   resources :relationships
   resources :posts
   
+  match '/posts/reply/:reply_id', :to => 'posts#reply', :as => :reply_post, :via => 'post'
+  # match '/posts/reply', :to => 'posts#reply', :as => :reply_post
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
